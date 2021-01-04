@@ -7,13 +7,13 @@
 
 .grid-container {
     -webkit-column-count: 2;
-    -webkit-column-gap: 10px;
+    -webkit-column-gap: 0px;
     -webkit-column-fill: auto;
     -moz-column-count: 2;
-    -moz-column-gap: 10px;
+    -moz-column-gap: 0px;
     -moz-column-fill: balance !important;
     column-count: 2;
-    column-gap: 10px;
+    column-gap: 0px;
     column-fill: auto;
 }
 
