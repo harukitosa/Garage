@@ -11,12 +11,12 @@ const Home: FC = () => {
                 <title>Create Next App</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div className="w-screen h-screen">
-                { currentUser !== undefined &&
+            <div className="main h-screen">
+                {/* { currentUser !== undefined &&
                     <SignInWithTwitter>
                         twitterでログインする
                     </SignInWithTwitter>
-                }
+                } */}
             </div>
         </div>
   );
