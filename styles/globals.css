@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
+.main {
+    @apply m-auto;
+    max-width: 650px;
+}
 @tailwind utilities;
