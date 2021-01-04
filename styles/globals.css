@@ -4,4 +4,24 @@
     @apply m-auto;
     max-width: 650px;
 }
+
+.grid-container {
+    -webkit-column-count: 2;
+    -webkit-column-gap: 10px;
+    -webkit-column-fill: auto;
+    -moz-column-count: 2;
+    -moz-column-gap: 10px;
+    -moz-column-fill: balance !important;
+    column-count: 2;
+    column-gap: 10px;
+    column-fill: auto;
+}
+
+.grid-layout {
+    display: inline-block;
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    column-break-inside: avoid;
+}
+
 @tailwind utilities;
