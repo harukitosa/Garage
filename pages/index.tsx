@@ -11,7 +11,7 @@ const Home: FC = () => {
                 <title>Create Next App</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div className="main h-screen">
+            <div className="main h-screen bg-gray-100">
                 {/* { currentUser !== undefined &&
                     <SignInWithTwitter>
                         twitterでログインする
