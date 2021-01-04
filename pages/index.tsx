@@ -1,7 +1,7 @@
 import React, {FC, useContext} from 'react'
 import Head from 'next/head'
 import { AuthContext } from '../src/context/Auth';
-import SignInWithTwitter from '../components/SignInWithTwitter'
+// import SignInWithTwitter from '../components/SignInWithTwitter'
 
 const Home: FC = () => {
   const { currentUser } = useContext(AuthContext);
