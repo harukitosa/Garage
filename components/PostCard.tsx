@@ -1,10 +1,15 @@
+import { create } from 'domain';
 import React, {FC} from 'react'
 
 interface Props {
     imgURL: string,
+    iconURL: string,
+    userName: string,
+    content: string,
+    createAt: string,
 }
 
-const PostCard: FC<Props> = ({imgURL}) => {
+const PostCard: FC<Props> = ({imgURL, iconURL, userName, content, createAt}) => {
     return (
         <div className="w-full grid-layout">
             <div className="bg-white rounded-lg p-2 m-1">
@@ -12,14 +17,13 @@ const PostCard: FC<Props> = ({imgURL}) => {
                     <img src={imgURL} alt="macbook" />
                 </div>
                 <div className="pt-2 flex flex-row items-center">
-                    <img className="rounded-full" src="./icon.jpg" width="30" alt=""/>
+                    <img className="rounded-full" src={iconURL} width="30" alt=""/>
                     <div className="pl-2 text-sm">
-                        <p>とさ</p>
+                        <p>{userName}</p>
                     </div>
                 </div>
                 <div className="text-sm pt-2">
-                    お金が貯まったので購入しました！
-                    スペックが非常に高くて良かったです！...
+                    {content}
                 </div>
                 <div className="pt-4 flex flex-row justify-between">
                     <div className="flex flex-wrap">
@@ -33,7 +37,7 @@ const PostCard: FC<Props> = ({imgURL}) => {
                         </div>
                     </div>
                     <div className="text-sm pr-2 text-gray-300">
-                        2020-12
+                        {createAt}
                     </div>
                 </div>
             </div>

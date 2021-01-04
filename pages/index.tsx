@@ -13,13 +13,12 @@ const Home: FC = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div className="main bg-gray-100 grid-container">
-                <PostCard imgURL="./mbp-silver-gallery1-202011.jpeg"/>
-                <PostCard imgURL="./mbp13-witb-silver-202005.jpeg"/>
-                <PostCard imgURL="./mbp-silver-gallery1-202011.jpeg"/>
-                <PostCard imgURL="./mbp-silver-gallery1-202011.jpeg"/>
-                <PostCard imgURL="./mbp13-witb-silver-202005.jpeg"/>
-                <PostCard imgURL="./mbp-silver-gallery1-202011.jpeg"/>
-                <PostCard imgURL="./mbp-silver-gallery1-202011.jpeg"/>
+            <PostCard imgURL="./mbp-silver-gallery1-202011.jpeg" iconURL="./icon.jpg" userName="とさ" content="お金が貯まったので購入しました！すごく良かったです！..." createAt="2020-12"/>
+            <PostCard imgURL="./mbp13-witb-silver-202005.jpeg" iconURL="./icon.jpg" userName="とさ" content="お金が貯まったので購入しました！すごく良かったです！..." createAt="2020-12"/>
+            <PostCard imgURL="./mbp13-witb-silver-202005.jpeg" iconURL="./icon.jpg" userName="とさ" content="お金が貯まったので購入しました！すごく良かったです！..." createAt="2020-12"/>
+            <PostCard imgURL="./mbp-silver-gallery1-202011.jpeg" iconURL="./icon.jpg" userName="とさ" content="お金が貯まったので購入しました！すごく良かったです！..." createAt="2020-12"/>
+            <PostCard imgURL="./mbp13-witb-silver-202005.jpeg" iconURL="./icon.jpg" userName="とさ" content="お金が貯まったので購入しました！すごく良かったです！..." createAt="2020-12"/>
+            <PostCard imgURL="./mbp-silver-gallery1-202011.jpeg" iconURL="./icon.jpg" userName="とさ" content="お金が貯まったので購入しました！すごく良かったです！..." createAt="2020-12"/>
                 {/* { currentUser !== undefined &&
                     <SignInWithTwitter>
                         twitterでログインする
