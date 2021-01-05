@@ -24,4 +24,8 @@
     column-break-inside: avoid;
 }
 
+.min-h {
+    min-height: 100vh;
+}
+
 @tailwind utilities;
