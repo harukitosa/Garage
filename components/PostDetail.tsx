@@ -9,7 +9,7 @@ interface Props {
     createAt: string,
 }
 
-const PostCard: FC<Props> = ({imgURL, iconURL, userName, content, createAt}) => {
+const PostDetail: FC<Props> = ({imgURL, iconURL, userName, content, createAt}) => {
     return (
         <div className="w-full grid-layout">
             <Link href="/post/1">
@@ -17,23 +17,26 @@ const PostCard: FC<Props> = ({imgURL, iconURL, userName, content, createAt}) => 
                     <div>
                         <img src={imgURL} alt="macbook" />
                     </div>
-                    <div className="pt-2 flex flex-row items-center">
+                    <div className="text-3xl p-2">
+                        <h1>MacBook Pro 2020</h1>
+                    </div>
+                    <div className="p-2 flex flex-row items-center">
                         <img className="rounded-full" src={iconURL} width="30" alt=""/>
                         <div className="pl-2 text-sm">
                             <p>{userName}</p>
                         </div>
                     </div>
-                    <div className="text-sm pt-2">
+                    <div className="text-sm p-2">
                         {content}
                     </div>
                     <div className="pt-4 flex flex-row justify-between">
                         <div className="flex flex-wrap">
                             <div className="flex flex-row text-sm items-center pl-2">
-                                <img src="./heart-outline.svg" alt="heart" width="20" />
+                                <img src="../../heart-outline.svg" alt="heart" width="20" />
                                 <p className="pl-1">12</p>
                             </div>
                             <div className="flex flex-row text-sm items-center pl-2">
-                                <img src="./chatbox-outline.svg" alt="heart" width="20" />
+                                <img src="../../chatbox-outline.svg" alt="heart" width="20" />
                                 <p className="pl-1">0</p>
                             </div>
                         </div>
@@ -47,4 +50,4 @@ const PostCard: FC<Props> = ({imgURL, iconURL, userName, content, createAt}) => 
     );
 } 
 
-export default PostCard;
+export default PostDetail;
