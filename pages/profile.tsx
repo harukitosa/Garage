@@ -12,7 +12,6 @@ const Profile: FC = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div className="main">
-                <div className="h-1 bg-gray-100"></div>
                 <ProfileCard 
                  profile="自己紹介"
                  profileName="とさ"
