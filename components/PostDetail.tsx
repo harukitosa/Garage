@@ -26,23 +26,27 @@ const PostDetail: FC<Props> = ({imgURL, iconURL, userName, content, createAt}) =
                             <p>{userName}</p>
                         </div>
                     </div>
+                    <div className="flex flex-row justify-between items-center">
+                        <div className="w-1/2">
+                        </div>
+                        <div className="w-1/6 flex flex-col justify-center items-center">
+                            <img src="../../heart-outline.svg" width="25" alt="heart"/>
+                            <p className="text-sm text-gray-300">like</p>
+                        </div>
+                        <div className="w-1/6 flex flex-col justify-center items-center">
+                            <img src="../../bookmark-outline.svg" width="25" alt="bookmark"/>
+                            <p className="text-sm text-gray-300">save</p>
+                        </div>
+                        <div className="w-1/6 flex flex-col justify-center items-center">
+                            <img src="../../share-social-outline.svg" width="25" alt="share"/>
+                            <p className="text-sm text-gray-300">share</p>
+                        </div>
+                    </div>
                     <div className="text-sm p-2">
                         {content}
                     </div>
-                    <div className="pt-4 flex flex-row justify-between">
-                        <div className="flex flex-wrap">
-                            <div className="flex flex-row text-sm items-center pl-2">
-                                <img src="../../heart-outline.svg" alt="heart" width="20" />
-                                <p className="pl-1">12</p>
-                            </div>
-                            <div className="flex flex-row text-sm items-center pl-2">
-                                <img src="../../chatbox-outline.svg" alt="heart" width="20" />
-                                <p className="pl-1">0</p>
-                            </div>
-                        </div>
-                        <div className="text-sm pr-2 text-gray-300">
-                            {createAt}
-                        </div>
+                    <div className="flex flex-row justify-end text-sm pr-2 text-gray-300">
+                        {createAt}
                     </div>
                 </div>
             </Link>

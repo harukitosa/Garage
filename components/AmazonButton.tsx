@@ -7,7 +7,7 @@ const AmazonButton: FC = ({ children }) => {
     }
 
     return (
-        <button onClick={amazonLink} className="bg-pink-400 hover:bg-pink-500 text-white px-8 py-2 rounded select-none">
+        <button onClick={amazonLink} className="bg-red-400 hover:bg-red-500 text-white px-8 py-2 rounded select-none">
           { children }
         </button>
     );
