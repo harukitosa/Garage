@@ -28,4 +28,8 @@
     min-height: 100vh;
 }
 
+.text-min {
+    font-size: 8px;
+}
+
 @tailwind utilities;

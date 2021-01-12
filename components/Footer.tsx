@@ -16,9 +16,11 @@ const Footer: FC = () => {
                 </div>
             </Link>
 
-            <div className="text-white w-1/4 h-12 flex items-center justify-center">
-                <img src="/add-circle-outline.svg" alt="home" width="25"/>
-            </div>
+            <Link href="/new">
+                <div className="text-white w-1/4 h-12 flex items-center justify-center">
+                    <img src="/add-circle-outline.svg" alt="home" width="25"/>
+                </div>
+            </Link>
             <div className="text-white w-1/4 h-12 flex items-center justify-center">
                 <img src="/notifications-outline.svg" alt="home" width="25"/>
             </div>
