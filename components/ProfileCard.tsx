@@ -11,7 +11,9 @@ const ProfileCard: FC<Props> = ({profile, profileName, iconURL}) => {
         <div className="bg-gray-700 p-4 text-white">
             <div className="flex flex-wrap">
                 <div className="flex flex-row">
-                    <img src={iconURL} alt="icon" width="100" className="rounded-full" />
+                    <div className="p-4">
+                        <img src={iconURL} alt="icon" className="rounded-full w-20" />
+                    </div>
                     <div className="p-4">
                         <p className="text-xl">{profileName}</p>
                         <div>
